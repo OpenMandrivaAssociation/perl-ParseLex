@@ -1,5 +1,5 @@
 %define upstream_name    ParseLex
-%define upstream_version 2.18
+%define upstream_version 2.19
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -34,8 +34,9 @@ directory.
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 %make
 
+%check
 # make test won't work...
-#make test
+%make test
 
 %install
 rm -rf %{buildroot}
