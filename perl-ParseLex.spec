@@ -1,9 +1,9 @@
 %define upstream_name    ParseLex
-%define upstream_version 2.19
+%define upstream_version 2.20
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Generator of lexical analyzers 
 License:    GPL+ or Artistic
