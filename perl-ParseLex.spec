@@ -8,7 +8,7 @@ Release:	4
 Summary:	Generator of lexical analyzers 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/P/PV/PVERD/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
