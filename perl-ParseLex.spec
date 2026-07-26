@@ -1,15 +1,13 @@
 %define upstream_name    ParseLex
-%define upstream_version 2.21
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	2.21
+Release:	2
 
 Summary:	Generator of lexical analyzers 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/ParseLex
-Source0:	https://cpan.metacpan.org/authors/id/P/PS/PSCUST/ParseLex-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/P/PS/PSCUST/ParseLex-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -29,7 +27,7 @@ Parse::Lex/Parse::LevEvent features can be found in the "examples"
 directory.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -84,9 +82,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 - renamed package perl-ParseLex to perl-Parse-Lex
 - renamed package to perl-Parse-Lex to follow mandriva conventions (yes,
   author is brain-dead)
-- using %%perl_convert_version
-
-* Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 2.15-5mdv2009.0
+- using %2.21 Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 2.15-5mdv2009.0
 + Revision: 258191
 - rebuild
 
